@@ -1,0 +1,6 @@
+{
+  "name": "Наш Пиксельный Мирок",
+  "description": "Интерактивный пиксельный сайт с уютными сценами пары по мотивам их фотографий",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

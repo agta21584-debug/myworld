@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Press Start 2P', monospace;
+    --font-body: 'Pixelify Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #fdf2f6;
+    color: #2b1d28;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-pixel-title {
+  font-family: var(--font-display);
+}
+
+.font-pixel-body {
+  font-family: var(--font-body);
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.pixel-frame {
+  border: 3px solid #2b1d28;
+  box-shadow: 4px 4px 0px #2b1d28;
+}
+
+.pixel-frame-sm {
+  border: 2px solid #2b1d28;
+  box-shadow: 3px 3px 0px #2b1d28;
+}
+
+.pixel-btn {
+  border: 2px solid #2b1d28;
+  box-shadow: 3px 3px 0px #2b1d28;
+  transition: transform 80ms ease, box-shadow 80ms ease, background-color 120ms ease;
+}
+
+.pixel-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #2b1d28;
+}
+
+.pixel-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #2b1d28;
+}
